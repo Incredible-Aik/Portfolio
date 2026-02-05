@@ -51,7 +51,7 @@ const projectList = [
   {
     title: "Portfolio Website",
     description:
-      "This portfolio website showcasing my skills, projects, and journey in technology. Built with React and deployed using GitHub Pages.",
+      "This is a portfolio website showcasing my skills, projects, and journey in technology. Built with React and deployed using GitHub Pages.",
     url: "https://github.com/Incredible-Aik/Portfolio",
   },
 ];

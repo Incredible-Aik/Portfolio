@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "My journey in cybersecurity began with a fascination for technology and a desire to understand how systems can be both created and protected. During my first year of studies, I immersed myself in the basics of networking and operating systems, realizing the importance of a strong foundational knowledge. I offer I.C.T as one of my elective programs in the secondary school which gave me a strong background to enter the field of computer science. Earning My First Certification: Midway through my studies, I achieved my FLL certification. This not only validated my skills but also boosted my confidence and commitment to pursuing a career in cybersecurity.";
+  "My journey in cybersecurity began with a fascination for technology and a desire to understand how systems can be both created and protected. During my first year of studies, I immersed myself in the basics of networking and operating systems, realizing the importance of a strong foundational knowledge. I offered I.C.T as one of my elective programs in the secondary school which gave me a strong background to enter the field of computer science. Earning My First Certification: Midway through my studies, I achieved my FLL certification. This not only validated my skills but also boosted my confidence and commitment to pursuing a career in cybersecurity.";
 
 const About = () => {
   return (
