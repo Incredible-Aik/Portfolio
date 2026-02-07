@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -18,6 +22,8 @@ div#main {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  position: relative;
+  z-index: 1;
 }
 
 section {
@@ -213,5 +219,12 @@ a:hover {
   border-color: #00d9ff;
   box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
   transform: translateY(-5px);
+}
+
+/* Header Navigation Styles */
+header a,
+div[style*="position: fixed"] a {
+  position: relative;
+  display: inline-block;
 }
 
