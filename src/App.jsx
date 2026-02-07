@@ -25,7 +25,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Isaac Kwame Adusei",
-  title: "Student",
+  title: "Cybersecurity Enthusiast - Unpredictable",
   email: "aikadusei2005@gmail.com",
   gitHub: "Incredible-Aik",
   instagram: "",
@@ -35,8 +35,8 @@ const siteProps = {
   youTube: "",
 };
 
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
+const primaryColor = "#0a0e27"; // Deep dark blue/black
+const secondaryColor = "#00d9ff"; // Bright cyan/electric blue
 
 const App = () => {
   return (
