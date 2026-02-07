@@ -94,7 +94,7 @@ const Home = ({ name, title }) => {
             width: "3rem",
             filter: "drop-shadow(0 0 10px #00d9ff)",
           }}
-          alt={imageAltText}
+          alt="Scroll down to view more content"
         />
       </div>
     </section>
