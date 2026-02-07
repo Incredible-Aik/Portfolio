@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "GitHub Profile",
+    title: "🏥 MedixCare Hospital Management System",
     description:
-      "Visit my GitHub profile to explore my repositories and contributions. I'm building my portfolio of projects as I learn and grow in the field of cybersecurity and computer science.",
+      "A comprehensive full-stack hospital management system featuring QR code-based patient check-in, AI-powered appointment scheduling, electronic medical records (EMR), role-based access control, integrated billing, and pharmacy management. Built with Node.js, Express, TypeScript, React 18, PostgreSQL, and Tailwind CSS.",
+    url: "https://github.com/Incredible-Aik/medixcare-hms",
+  },
+  {
+    title: "🔐 Access Control Implementation Lab (Linux)",
+    description:
+      "Academic project implementing and evaluating access controls in Linux environments. Configured identification, authentication, and authorization mechanisms, and applied file permissions and ACLs for secure resource management.",
     url: "https://github.com/Incredible-Aik",
   },
   {
-    title: "Cybersecurity Learning Journey",
+    title: "🌐 Personal Portfolio Website",
     description:
-      "My ongoing journey in cybersecurity, focusing on networking fundamentals, operating systems, and security best practices. Currently pursuing certifications and hands-on experience.",
-    url: "https://github.com/Incredible-Aik",
-  },
-  {
-    title: "FLL Certification Achievement",
-    description:
-      "Successfully earned my FLL (Fortinet Learning Lab) certification, demonstrating foundational knowledge in networking and security concepts. This certification validated my commitment to the cybersecurity field.",
-    url: "https://github.com/Incredible-Aik",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "This is a portfolio website showcasing my skills, projects, and journey in technology. Built with React and deployed using GitHub Pages.",
+      "A React-based portfolio website showcasing my projects, skills, and journey in cybersecurity. Built using GitHub Codespaces and deployable to GitHub Pages or Azure Static Web Apps.",
     url: "https://github.com/Incredible-Aik/Portfolio",
+  },
+  {
+    title: "📄 Professional CV Repository",
+    description:
+      "My professional CV/Resume maintained in a GitHub repository, showcasing my education, technical skills, certifications, and project experience in cybersecurity and software development.",
+    url: "https://github.com/Incredible-Aik/CV",
   },
 ];
 
