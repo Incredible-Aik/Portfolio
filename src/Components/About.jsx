@@ -53,16 +53,21 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(10, 14, 39, 0.95)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          border: "2px solid #00d9ff",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
+          borderRadius: "10px",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
+        <h2 style={{ color: "#00d9ff", textShadow: "0 0 10px #00d9ff" }}>About Myself</h2>
+        <p className="large" style={{ color: "#ffffff" }}>
+          {description}
+        </p>
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
         <ul
           style={{
             textAlign: "left",
@@ -70,14 +75,17 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color: "#ffffff",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li key={skill} style={{ marginBottom: "0.5rem" }}>
+              {skill}
+            </li>
           ))}
         </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
+        <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
