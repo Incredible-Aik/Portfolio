@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  background: #0a0e27;
 }
 
 div#main {
