@@ -31,11 +31,15 @@ const description =
  */
 const skillsList = [
   "Cybersecurity",
-  "Networking",
-  "Operating Systems",
+  "Python",
+  "JavaScript/TypeScript",
+  "React.js & Node.js",
+  "Linux (Kali/Ubuntu)",
+  "Penetration Testing",
+  "PostgreSQL",
+  "Network Security",
+  "Git & GitHub",
   "Problem Solving",
-  "System Protection",
-  "Learning & Development",
 ];
 
 /**
@@ -48,8 +52,9 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="min-height padding" id="about" style={{ position: "relative" }}>
       <img className="background" src={image} alt={imageAltText} />
+      <div className="cyberpunk-overlay"></div>
       <div
         style={{
           backgroundColor: "rgba(10, 14, 39, 0.95)",

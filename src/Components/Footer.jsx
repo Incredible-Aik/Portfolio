@@ -19,13 +19,6 @@ import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
 
-/**
- * 💡 Learning resources
- *
- *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
- *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
- */
-
 const Footer = (props) => {
   const {
     devDotTo,
@@ -51,13 +44,39 @@ const Footer = (props) => {
         padding: "5rem 0 3rem",
         backgroundColor: primaryColor,
         width: "100vw",
+        borderTop: "2px solid rgba(0, 217, 255, 0.3)",
+        boxShadow: "0 -4px 20px rgba(0, 217, 255, 0.2)",
       }}
     >
+      <h2
+        style={{
+          color: "#00d9ff",
+          textShadow: "0 0 20px rgba(0, 217, 255, 0.8)",
+          fontSize: "2.5rem",
+          marginBottom: "1rem",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+        }}
+      >
+        Get In Touch
+      </h2>
+      <p
+        style={{
+          color: "#ffffff",
+          fontSize: "1.2rem",
+          maxWidth: "600px",
+          textAlign: "center",
+          lineHeight: "1.6",
+        }}
+      >
+        I&apos;m always open to new opportunities and collaborations. Feel free to reach out!
+      </p>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           gap: "2.5rem",
+          flexWrap: "wrap",
         }}
       >
         {email && (
@@ -92,6 +111,18 @@ const Footer = (props) => {
             href={`https://www.instagram.com/${instagram}`}
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+              e.currentTarget.style.transform = "translateY(-5px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
           >
             <img 
               src={instagramIcon} 
@@ -105,6 +136,18 @@ const Footer = (props) => {
             href={`https://www.linkedin.com/in/${linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+              e.currentTarget.style.transform = "translateY(-5px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
           >
             <img 
               src={linkedInIcon} 
@@ -136,6 +179,18 @@ const Footer = (props) => {
             href={`https://www.youtube.com/c/${youTube}`}
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+              e.currentTarget.style.transform = "translateY(-5px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
           >
             <img 
               src={youTubeIcon} 
@@ -145,8 +200,14 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+      <p
+        style={{
+          color: "rgba(255, 255, 255, 0.6)",
+          fontSize: "0.9rem",
+          marginTop: "2rem",
+        }}
+      >
+        © 2026 {name}. Crafted with passion and code.
       </p>
     </div>
   );
