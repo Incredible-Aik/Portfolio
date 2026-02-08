@@ -86,40 +86,11 @@ const Portfolio = () => {
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div
-              className="box"
-              key={project.title}
-              style={{
-                backgroundColor: "rgba(10, 14, 39, 0.9)",
-                border: "2px solid rgba(0, 217, 255, 0.3)",
-                boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
-                transition: "all 0.3s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "#00d9ff";
-                e.currentTarget.style.boxShadow = "0 0 30px rgba(0, 217, 255, 0.4)";
-                e.currentTarget.style.transform = "translateY(-5px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(0, 217, 255, 0.3)";
-                e.currentTarget.style.boxShadow = "0 0 20px rgba(0, 217, 255, 0.2)";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
-            >
+            <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3
-                  style={{
-                    flexBasis: "40px",
-                    color: "#00d9ff",
-                    textShadow: "0 0 10px rgba(0, 217, 255, 0.5)",
-                  }}
-                >
-                  {project.title}
-                </h3>
+                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
-              <p className="small" style={{ color: "#ffffff" }}>
-                {project.description}
-              </p>
+              <p className="small">{project.description}</p>
             </div>
           ))}
         </div>
