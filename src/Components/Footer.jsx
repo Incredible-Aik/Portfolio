@@ -51,25 +51,25 @@ const Footer = (props) => {
       <h2
         style={{
           color: "#00d9ff",
-          textShadow: "0 0 20px rgba(0, 217, 255, 0.8)",
+          textShadow: "0 0 20px #00d9ff",
           fontSize: "2.5rem",
           marginBottom: "1rem",
           textTransform: "uppercase",
           letterSpacing: "0.1em",
         }}
       >
-        Get In Touch
+        Contact
       </h2>
       <p
         style={{
           color: "#ffffff",
           fontSize: "1.2rem",
-          maxWidth: "600px",
           textAlign: "center",
-          lineHeight: "1.6",
+          maxWidth: "600px",
+          margin: "0 2rem",
         }}
       >
-        I&apos;m always open to new opportunities and collaborations. Feel free to reach out!
+        Let's connect! Feel free to reach out through any of these platforms.
       </p>
       <div
         style={{
@@ -80,29 +80,93 @@ const Footer = (props) => {
         }}
       >
         {email && (
-          <a href={`mailto:${email}`}>
-            <img 
-              src={envelopeIcon} 
-              alt="email" 
+          <a
+            href={`mailto:${email}`}
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
+            }}
+          >
+            <img
+              src={envelopeIcon}
+              alt="email"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
         {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={devDotToIcon} 
-              alt="Dev.to" 
+          <a
+            href={`https://dev.to/${devDotTo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
+            }}
+          >
+            <img
+              src={devDotToIcon}
+              alt="Dev.to"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={gitHubIcon} 
-              alt="GitHub" 
+          <a
+            href={`https://github.com/${gitHub}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
+            }}
+          >
+            <img
+              src={gitHubIcon}
+              alt="GitHub"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
@@ -113,21 +177,27 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             style={{
               transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
             }}
             onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
               e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-              e.currentTarget.style.transform = "translateY(-5px)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
-              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
             }}
           >
-            <img 
-              src={instagramIcon} 
-              alt="Instagram" 
+            <img
+              src={instagramIcon}
+              alt="Instagram"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
@@ -138,39 +208,89 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             style={{
               transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
             }}
             onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
               e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-              e.currentTarget.style.transform = "translateY(-5px)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
-              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
             }}
           >
-            <img 
-              src={linkedInIcon} 
-              alt="LinkedIn" 
+            <img
+              src={linkedInIcon}
+              alt="LinkedIn"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
         {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={mediumIcon} 
-              alt="Medium" 
+          <a
+            href={`https://medium.com/@${medium}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
+            }}
+          >
+            <img
+              src={mediumIcon}
+              alt="Medium"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
         {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img 
-              src={twitterIcon} 
-              alt="Twitter" 
+          <a
+            href={`https://twitter.com/${twitter}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              transition: "all 0.3s ease",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
+            }}
+          >
+            <img
+              src={twitterIcon}
+              alt="Twitter"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
@@ -181,33 +301,39 @@ const Footer = (props) => {
             rel="noopener noreferrer"
             style={{
               transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))",
+              filter: "drop-shadow(0 0 10px #00d9ff)",
             }}
             onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
               e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-              e.currentTarget.style.transform = "translateY(-5px)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))";
-              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
             }}
           >
-            <img 
-              src={youTubeIcon} 
-              alt="YouTube" 
+            <img
+              src={youTubeIcon}
+              alt="YouTube"
               className="socialIcon"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter:
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
+              }}
             />
           </a>
         )}
       </div>
       <p
         style={{
-          color: "rgba(255, 255, 255, 0.6)",
+          color: "rgba(0, 217, 255, 0.7)",
           fontSize: "0.9rem",
           marginTop: "2rem",
         }}
       >
-        © 2026 {name}. Crafted with passion and code.
+        © {new Date().getFullYear()} {name}. Built with passion & caffeine ⚡
       </p>
     </div>
   );

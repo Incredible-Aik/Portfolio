@@ -58,25 +58,34 @@ const About = () => {
       <div
         style={{
           backgroundColor: "rgba(10, 14, 39, 0.95)",
+          border: "2px solid rgba(0, 217, 255, 0.3)",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
-          border: "2px solid rgba(0, 217, 255, 0.3)",
-          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
           backdropFilter: "blur(10px)",
         }}
       >
-        <h2 style={{ color: "#00d9ff", textShadow: "0 0 20px rgba(0, 217, 255, 0.8)" }}>
+        <h2
+          style={{
+            color: "#00d9ff",
+            textShadow: "0 0 20px #00d9ff",
+            fontSize: "2.5rem",
+            marginBottom: "2rem",
+          }}
+        >
           About Myself
         </h2>
         <p className="large" style={{ color: "#ffffff" }}>
           {description}
         </p>
-        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
-        <h3 style={{ color: "#00d9ff", textShadow: "0 0 15px rgba(0, 217, 255, 0.6)", marginBottom: "1rem" }}>
-          Technical Stack
-        </h3>
+        <hr
+          style={{
+            borderColor: "rgba(0, 217, 255, 0.3)",
+            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
+          }}
+        />
         <ul
           style={{
             textAlign: "left",
@@ -88,12 +97,23 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill} style={{ color: "#ffffff" }}>
+            <li
+              key={skill}
+              style={{
+                marginBottom: "0.5rem",
+                color: "#00d9ff",
+              }}
+            >
               {skill}
             </li>
           ))}
         </ul>
-        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
+        <hr
+          style={{
+            borderColor: "rgba(0, 217, 255, 0.3)",
+            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
+          }}
+        />
         <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>

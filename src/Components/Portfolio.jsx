@@ -58,28 +58,28 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio" style={{ 
-      background: "linear-gradient(180deg, #0a0e27 0%, #1a1f3a 100%)",
-      position: "relative",
-    }}>
-      <h2 style={{ 
-        textAlign: "center", 
-        color: "#00d9ff", 
-        textShadow: "0 0 20px rgba(0, 217, 255, 0.8)",
-        fontSize: "2.5rem",
-      }}>
+    <section className="padding" id="portfolio">
+      <h2
+        style={{
+          textAlign: "center",
+          color: "#00d9ff",
+          textShadow: "0 0 20px #00d9ff",
+          fontSize: "2.5rem",
+          marginBottom: "3rem",
+        }}
+      >
         Portfolio
       </h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ 
-              height: "90%", 
-              width: "100%", 
+            style={{
+              height: "90%",
+              width: "100%",
               objectFit: "cover",
               border: "2px solid rgba(0, 217, 255, 0.3)",
-              boxShadow: "0 0 30px rgba(0, 217, 255, 0.3)",
+              boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
             }}
             alt={imageAltText}
           />
