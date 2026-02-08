@@ -66,9 +66,6 @@ const Footer = (props) => {
               src={envelopeIcon} 
               alt="email" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -78,9 +75,6 @@ const Footer = (props) => {
               src={devDotToIcon} 
               alt="Dev.to" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -90,9 +84,6 @@ const Footer = (props) => {
               src={gitHubIcon} 
               alt="GitHub" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -106,9 +97,6 @@ const Footer = (props) => {
               src={instagramIcon} 
               alt="Instagram" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -122,9 +110,6 @@ const Footer = (props) => {
               src={linkedInIcon} 
               alt="LinkedIn" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -134,9 +119,6 @@ const Footer = (props) => {
               src={mediumIcon} 
               alt="Medium" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -146,9 +128,6 @@ const Footer = (props) => {
               src={twitterIcon} 
               alt="Twitter" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}
@@ -162,9 +141,6 @@ const Footer = (props) => {
               src={youTubeIcon} 
               alt="YouTube" 
               className="socialIcon"
-              style={{ 
-                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
-              }}
             />
           </a>
         )}

@@ -129,10 +129,11 @@ img.socialIcon {
   height: 30px;
   width: 30px;
   transition: all 0.3s ease;
+  filter: invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%);
 }
 
 img.socialIcon:hover {
-  filter: invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%) drop-shadow(0 0 10px #00d9ff) !important;
+  filter: invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%) drop-shadow(0 0 10px #00d9ff);
   transform: scale(1.2) translateY(-3px);
 }
 
