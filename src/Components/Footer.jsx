@@ -42,10 +42,10 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        backgroundColor: "rgba(10, 14, 39, 0.95)",
         width: "100vw",
-        borderTop: "2px solid rgba(0, 217, 255, 0.3)",
-        boxShadow: "0 -4px 20px rgba(0, 217, 255, 0.2)",
+        borderTop: "2px solid #00d9ff",
+        boxShadow: "0 -5px 30px rgba(0, 217, 255, 0.2)",
       }}
     >
       <h2 style={{ color: "#00d9ff", marginBottom: "1rem" }}>Contact</h2>
@@ -94,8 +94,10 @@ const Footer = (props) => {
               alt="Instagram"
               className="socialIcon"
               style={{
+                width: "40px",
+                height: "40px",
                 filter:
-                  "brightness(0) saturate(100%) invert(65%) sepia(95%) saturate(2065%) hue-rotate(161deg) brightness(103%) contrast(101%)",
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
               }}
             />
           </a>
@@ -112,8 +114,10 @@ const Footer = (props) => {
               alt="LinkedIn"
               className="socialIcon"
               style={{
+                width: "40px",
+                height: "40px",
                 filter:
-                  "brightness(0) saturate(100%) invert(65%) sepia(95%) saturate(2065%) hue-rotate(161deg) brightness(103%) contrast(101%)",
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
               }}
             />
           </a>
@@ -150,8 +154,10 @@ const Footer = (props) => {
               alt="YouTube"
               className="socialIcon"
               style={{
+                width: "40px",
+                height: "40px",
                 filter:
-                  "brightness(0) saturate(100%) invert(65%) sepia(95%) saturate(2065%) hue-rotate(161deg) brightness(103%) contrast(101%)",
+                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
               }}
             />
           </a>
@@ -159,12 +165,12 @@ const Footer = (props) => {
       </div>
       <p
         style={{
-          color: "rgba(255, 255, 255, 0.6)",
+          color: "rgba(0, 217, 255, 0.7)",
           fontSize: "0.9rem",
           marginTop: "2rem",
         }}
       >
-        © 2026 {name}. Crafted with passion and code.
+        © {new Date().getFullYear()} {name}. Built with passion & caffeine ⚡
       </p>
     </div>
   );
