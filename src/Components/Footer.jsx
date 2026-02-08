@@ -65,38 +65,17 @@ const Footer = (props) => {
       >
         {email && (
           <a href={`mailto:${email}`}>
-            <img
-              src={envelopeIcon}
-              alt="email"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
         )}
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img
-              src={devDotToIcon}
-              alt="Dev.to"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </a>
         )}
         {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img
-              src={gitHubIcon}
-              alt="GitHub"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
         {instagram && (
@@ -105,14 +84,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={instagramIcon}
-              alt="Instagram"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
         )}
         {linkedIn && (
@@ -121,38 +93,17 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={linkedInIcon}
-              alt="LinkedIn"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
         )}
         {medium && (
           <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img
-              src={mediumIcon}
-              alt="Medium"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
         )}
         {twitter && (
           <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img
-              src={twitterIcon}
-              alt="Twitter"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
         {youTube && (
@@ -161,14 +112,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={youTubeIcon}
-              alt="YouTube"
-              className="socialIcon"
-              style={{
-                filter: "brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
       </div>
