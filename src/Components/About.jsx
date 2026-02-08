@@ -27,8 +27,7 @@ const description =
   "I'm Adusei Kwame Isaac, but you can call me Aik. I'm from Osiem in the Eastern Region of Ghana and a student at GCTU. I'm a thoughtful and introspective person who enjoys learning and solving problems. Though I might seem quiet at first, I'm always up for a good conversation or a new challenge.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Technical stack - technologies and skills you work with
  */
 const skillsList = [
   "Cybersecurity",
@@ -58,36 +57,26 @@ const About = () => {
       <div className="cyberpunk-overlay"></div>
       <div
         style={{
-          backgroundColor: "rgba(10, 14, 39, 0.9)",
+          backgroundColor: "rgba(10, 14, 39, 0.95)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
           border: "2px solid rgba(0, 217, 255, 0.3)",
-          boxShadow: "0 0 30px rgba(0, 217, 255, 0.2)",
-          borderRadius: "10px",
-          position: "relative",
-          zIndex: 2,
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
+          backdropFilter: "blur(10px)",
         }}
       >
-        <h2
-          style={{
-            color: "#00d9ff",
-            textShadow: "0 0 20px rgba(0, 217, 255, 0.8)",
-            marginBottom: "2rem",
-          }}
-        >
+        <h2 style={{ color: "#00d9ff", textShadow: "0 0 20px rgba(0, 217, 255, 0.8)" }}>
           About Myself
         </h2>
         <p className="large" style={{ color: "#ffffff" }}>
           {description}
         </p>
-        <hr
-          style={{
-            borderColor: "rgba(0, 217, 255, 0.3)",
-            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
-          }}
-        />
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
+        <h3 style={{ color: "#00d9ff", textShadow: "0 0 15px rgba(0, 217, 255, 0.6)", marginBottom: "1rem" }}>
+          Technical Stack
+        </h3>
         <ul
           style={{
             textAlign: "left",
@@ -99,23 +88,12 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li
-              key={skill}
-              style={{
-                marginBottom: "0.8rem",
-                textShadow: "0 0 5px rgba(0, 217, 255, 0.3)",
-              }}
-            >
+            <li key={skill} style={{ color: "#ffffff" }}>
               {skill}
             </li>
           ))}
         </ul>
-        <hr
-          style={{
-            borderColor: "rgba(0, 217, 255, 0.3)",
-            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
-          }}
-        />
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
         <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>
