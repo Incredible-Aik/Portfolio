@@ -32,11 +32,15 @@ const description =
  */
 const skillsList = [
   "Cybersecurity",
-  "Networking",
-  "Operating Systems",
+  "Python",
+  "JavaScript/TypeScript",
+  "React.js & Node.js",
+  "Linux (Kali/Ubuntu)",
+  "Penetration Testing",
+  "PostgreSQL",
+  "Network Security",
+  "Git & GitHub",
   "Problem Solving",
-  "System Protection",
-  "Learning & Development",
 ];
 
 /**
@@ -53,16 +57,35 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(10, 14, 39, 0.95)",
+          border: "2px solid rgba(0, 217, 255, 0.3)",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          backdropFilter: "blur(10px)",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
+        <h2
+          style={{
+            color: "#00d9ff",
+            textShadow: "0 0 20px #00d9ff",
+            fontSize: "2.5rem",
+            marginBottom: "2rem",
+          }}
+        >
+          About Myself
+        </h2>
+        <p className="large" style={{ color: "#ffffff" }}>
+          {description}
+        </p>
+        <hr
+          style={{
+            borderColor: "rgba(0, 217, 255, 0.3)",
+            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
+          }}
+        />
         <ul
           style={{
             textAlign: "left",
@@ -70,14 +93,28 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color: "#ffffff",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li
+              key={skill}
+              style={{
+                marginBottom: "0.5rem",
+                color: "#00d9ff",
+              }}
+            >
+              {skill}
+            </li>
           ))}
         </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <hr
+          style={{
+            borderColor: "rgba(0, 217, 255, 0.3)",
+            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
+          }}
+        />
+        <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>
   );

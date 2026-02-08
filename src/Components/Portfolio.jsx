@@ -59,22 +59,67 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2
+        style={{
+          textAlign: "center",
+          color: "#00d9ff",
+          textShadow: "0 0 20px #00d9ff",
+          fontSize: "2.5rem",
+          marginBottom: "3rem",
+        }}
+      >
+        Portfolio
+      </h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              border: "2px solid rgba(0, 217, 255, 0.3)",
+              boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
+            }}
             alt={imageAltText}
           />
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div
+              className="box"
+              key={project.title}
+              style={{
+                backgroundColor: "rgba(10, 14, 39, 0.9)",
+                border: "2px solid rgba(0, 217, 255, 0.3)",
+                boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "#00d9ff";
+                e.currentTarget.style.boxShadow = "0 0 30px rgba(0, 217, 255, 0.4)";
+                e.currentTarget.style.transform = "translateY(-5px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(0, 217, 255, 0.3)";
+                e.currentTarget.style.boxShadow = "0 0 20px rgba(0, 217, 255, 0.2)";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3
+                  style={{
+                    flexBasis: "40px",
+                    color: "#00d9ff",
+                    textShadow: "0 0 10px rgba(0, 217, 255, 0.5)",
+                  }}
+                >
+                  {project.title}
+                </h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="small" style={{ color: "#ffffff" }}>
+                {project.description}
+              </p>
             </div>
           ))}
         </div>
