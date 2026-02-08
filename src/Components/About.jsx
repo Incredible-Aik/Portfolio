@@ -27,8 +27,7 @@ const description =
   "I'm Adusei Kwame Isaac, but you can call me Aik. I'm from Osiem in the Eastern Region of Ghana and a student at GCTU. I'm a thoughtful and introspective person who enjoys learning and solving problems. Though I might seem quiet at first, I'm always up for a good conversation or a new challenge.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Technical stack - technologies and skills you work with
  */
 const skillsList = [
   "Cybersecurity",
@@ -53,8 +52,9 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="min-height padding" id="about" style={{ position: "relative" }}>
       <img className="background" src={image} alt={imageAltText} />
+      <div className="cyberpunk-overlay"></div>
       <div
         style={{
           backgroundColor: "rgba(10, 14, 39, 0.95)",
