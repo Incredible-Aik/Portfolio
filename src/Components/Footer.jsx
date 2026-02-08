@@ -62,17 +62,38 @@ const Footer = (props) => {
       >
         {email && (
           <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
+            <img 
+              src={envelopeIcon} 
+              alt="email" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
+            <img 
+              src={devDotToIcon} 
+              alt="Dev.to" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+            <img 
+              src={gitHubIcon} 
+              alt="GitHub" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {instagram && (
@@ -81,7 +102,14 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
+            <img 
+              src={instagramIcon} 
+              alt="Instagram" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {linkedIn && (
@@ -90,17 +118,38 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+            <img 
+              src={linkedInIcon} 
+              alt="LinkedIn" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {medium && (
           <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img src={mediumIcon} alt="Medium" className="socialIcon" />
+            <img 
+              src={mediumIcon} 
+              alt="Medium" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {twitter && (
           <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
+            <img 
+              src={twitterIcon} 
+              alt="Twitter" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
         {youTube && (
@@ -109,7 +158,14 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+            <img 
+              src={youTubeIcon} 
+              alt="YouTube" 
+              className="socialIcon"
+              style={{ 
+                filter: "invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%)",
+              }}
+            />
           </a>
         )}
       </div>

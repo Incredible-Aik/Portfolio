@@ -27,8 +27,7 @@ const description =
   "I'm Adusei Kwame Isaac, but you can call me Aik. I'm from Osiem in the Eastern Region of Ghana and a student at GCTU. I'm a thoughtful and introspective person who enjoys learning and solving problems. Though I might seem quiet at first, I'm always up for a good conversation or a new challenge.";
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Technical stack - technologies and skills you work with
  */
 const skillsList = [
   "Cybersecurity",
@@ -53,16 +52,26 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(10, 14, 39, 0.95)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          border: "2px solid rgba(0, 217, 255, 0.3)",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
+          backdropFilter: "blur(10px)",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
+        <h2 style={{ color: "#00d9ff", textShadow: "0 0 20px rgba(0, 217, 255, 0.8)" }}>
+          About Myself
+        </h2>
+        <p className="large" style={{ color: "#ffffff" }}>
+          {description}
+        </p>
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
+        <h3 style={{ color: "#00d9ff", textShadow: "0 0 15px rgba(0, 217, 255, 0.6)", marginBottom: "1rem" }}>
+          Technical Stack
+        </h3>
         <ul
           style={{
             textAlign: "left",
@@ -70,14 +79,17 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color: "#ffffff",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li key={skill} style={{ color: "#ffffff" }}>
+              {skill}
+            </li>
           ))}
         </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
+        <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
