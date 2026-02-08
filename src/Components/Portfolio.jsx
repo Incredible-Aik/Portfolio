@@ -59,15 +59,7 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2
-        style={{
-          textAlign: "center",
-          color: "#00d9ff",
-          textShadow: "0 0 20px #00d9ff",
-          fontSize: "2.5rem",
-          marginBottom: "3rem",
-        }}
-      >
+      <h2 style={{ textAlign: "center", color: "#00d9ff", textShadow: "0 0 10px #00d9ff" }}>
         Portfolio
       </h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
@@ -92,15 +84,11 @@ const Portfolio = () => {
               boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
             }}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ 
-                  flexBasis: "40px", 
-                  color: "#00d9ff", 
-                  textShadow: "0 0 10px rgba(0, 217, 255, 0.6)",
-                }}>
-                  {project.title}
-                </h3>
+                <h3 style={{ flexBasis: "40px", color: "#00d9ff" }}>{project.title}</h3>
               </a>
-              <p className="small" style={{ color: "#ffffff" }}>{project.description}</p>
+              <p className="small" style={{ color: "#ffffff" }}>
+                {project.description}
+              </p>
             </div>
           ))}
         </div>

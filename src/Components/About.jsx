@@ -58,34 +58,20 @@ const About = () => {
       <div
         style={{
           backgroundColor: "rgba(10, 14, 39, 0.95)",
-          border: "2px solid rgba(0, 217, 255, 0.3)",
-          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3)",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
-          backdropFilter: "blur(10px)",
+          border: "2px solid #00d9ff",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
+          borderRadius: "10px",
         }}
       >
-        <h2
-          style={{
-            color: "#00d9ff",
-            textShadow: "0 0 20px #00d9ff",
-            fontSize: "2.5rem",
-            marginBottom: "2rem",
-          }}
-        >
-          About Myself
-        </h2>
+        <h2 style={{ color: "#00d9ff", textShadow: "0 0 10px #00d9ff" }}>About Myself</h2>
         <p className="large" style={{ color: "#ffffff" }}>
           {description}
         </p>
-        <hr
-          style={{
-            borderColor: "rgba(0, 217, 255, 0.3)",
-            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
-          }}
-        />
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
         <ul
           style={{
             textAlign: "left",
@@ -97,23 +83,12 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li
-              key={skill}
-              style={{
-                marginBottom: "0.5rem",
-                color: "#00d9ff",
-              }}
-            >
+            <li key={skill} style={{ marginBottom: "0.5rem" }}>
               {skill}
             </li>
           ))}
         </ul>
-        <hr
-          style={{
-            borderColor: "rgba(0, 217, 255, 0.3)",
-            boxShadow: "0 0 10px rgba(0, 217, 255, 0.2)",
-          }}
-        />
+        <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
         <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
       </div>
     </section>

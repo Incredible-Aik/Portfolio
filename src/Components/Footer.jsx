@@ -42,35 +42,13 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        backgroundColor: "rgba(10, 14, 39, 0.95)",
         width: "100vw",
-        borderTop: "2px solid rgba(0, 217, 255, 0.3)",
-        boxShadow: "0 -4px 20px rgba(0, 217, 255, 0.2)",
+        borderTop: "2px solid #00d9ff",
+        boxShadow: "0 -5px 30px rgba(0, 217, 255, 0.2)",
       }}
     >
-      <h2
-        style={{
-          color: "#00d9ff",
-          textShadow: "0 0 20px #00d9ff",
-          fontSize: "2.5rem",
-          marginBottom: "1rem",
-          textTransform: "uppercase",
-          letterSpacing: "0.1em",
-        }}
-      >
-        Contact
-      </h2>
-      <p
-        style={{
-          color: "#ffffff",
-          fontSize: "1.2rem",
-          textAlign: "center",
-          maxWidth: "600px",
-          margin: "0 2rem",
-        }}
-      >
-        Let's connect! Feel free to reach out through any of these platforms.
-      </p>
+      <h2 style={{ color: "#00d9ff", textShadow: "0 0 10px #00d9ff", margin: 0 }}>Contact</h2>
       <div
         style={{
           display: "flex",

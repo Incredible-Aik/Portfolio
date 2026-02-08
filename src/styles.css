@@ -130,12 +130,12 @@ img.socialIcon {
   height: 30px;
   width: 30px;
   transition: all 0.3s ease;
-  filter: invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%);
 }
 
 img.socialIcon:hover {
-  filter: invert(58%) sepia(96%) saturate(2742%) hue-rotate(163deg) brightness(103%) contrast(101%) drop-shadow(0 0 10px #00d9ff);
-  transform: scale(1.2) translateY(-3px);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(120%) contrast(101%) drop-shadow(0 0 10px #00d9ff);
+  transform: scale(1.2);
 }
 
 /* Cyberpunk Theme Enhancements */
@@ -217,16 +217,30 @@ a:hover {
 
 /* Cards and containers */
 .box {
-  background: rgba(10, 14, 39, 0.8);
+  background: rgba(10, 14, 39, 0.9);
   border: 1px solid rgba(0, 217, 255, 0.3);
   box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
   transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 .box:hover {
   border-color: #00d9ff;
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.4), inset 0 0 20px rgba(0, 217, 255, 0.1);
   transform: translateY(-5px);
+}
+
+.box h3 {
+  color: #00d9ff;
+}
+
+.box a {
+  color: #00d9ff;
+}
+
+.box a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00d9ff;
 }
 
 /* Header Navigation Styles */
