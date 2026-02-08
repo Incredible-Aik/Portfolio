@@ -53,8 +53,9 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="min-height padding" id="about" style={{ position: "relative" }}>
       <img className="background" src={image} alt={imageAltText} />
+      <div className="cyberpunk-overlay"></div>
       <div
         style={{
           backgroundColor: "rgba(10, 14, 39, 0.95)",
@@ -79,6 +80,7 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color: "#ffffff",
           }}
         >
           {skillsList.map((skill) => (
