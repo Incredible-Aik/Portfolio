@@ -78,7 +78,11 @@ const Portfolio = () => {
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div className="box" key={project.title} style={{
+              background: "rgba(10, 14, 39, 0.9)",
+              border: "2px solid rgba(0, 217, 255, 0.3)",
+              boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
+            }}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px", color: "#00d9ff" }}>{project.title}</h3>
               </a>
