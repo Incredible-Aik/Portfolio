@@ -129,13 +129,22 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+  filter: invert(58%) sepia(94%) saturate(2798%) hue-rotate(158deg) brightness(103%) contrast(101%);
   transition: all 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(102%) contrast(101%);
 }
 
-img.socialIcon:hover {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(93%) saturate(2466%) hue-rotate(160deg) brightness(120%) contrast(101%) drop-shadow(0 0 10px #00d9ff);
-  transform: scale(1.2);
+.social-link {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2) translateY(-5px);
+  filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.6));
+}
+
+.social-link:hover img.socialIcon {
+  filter: invert(67%) sepia(100%) saturate(1000%) hue-rotate(158deg) brightness(120%) contrast(101%);
 }
 
 /* Cyberpunk Theme Enhancements */
@@ -201,7 +210,10 @@ section {
   background: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 100%);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #00d9ff;
 }
 
@@ -230,17 +242,17 @@ a:hover {
   transform: translateY(-5px);
 }
 
-.box h3 {
-  color: #00d9ff;
+.portfolio-card {
+  background: rgba(10, 14, 39, 0.9);
+  border: 2px solid rgba(0, 217, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.3), inset 0 0 15px rgba(0, 217, 255, 0.05);
 }
 
-.box a {
-  color: #00d9ff;
-}
-
-.box a:hover {
-  color: #00ffff;
-  text-shadow: 0 0 10px #00d9ff;
+.portfolio-card:hover {
+  border-color: #00d9ff;
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.6), inset 0 0 20px rgba(0, 217, 255, 0.1);
+  transform: translateY(-8px);
+  background: rgba(10, 14, 39, 0.95);
 }
 
 /* Header Navigation Styles */
@@ -249,47 +261,3 @@ div[style*="position: fixed"] a {
   position: relative;
   display: inline-block;
 }
-
-/* Portfolio Section Cyberpunk Styling */
-#portfolio {
-  background: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 100%);
-  padding: 5rem 0;
-}
-
-#portfolio h2 {
-  color: #00d9ff;
-  text-shadow: 0 0 20px #00d9ff;
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-
-.container .box {
-  border-radius: 10px;
-  border: 2px solid rgba(0, 217, 255, 0.3);
-  background: rgba(10, 14, 39, 0.9);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px 16px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
-  transition: all 0.3s ease;
-  color: #ffffff;
-}
-
-.container .box:hover {
-  border-color: #00d9ff;
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
-  transform: translateY(-5px);
-}
-
-.container .box h3 {
-  color: #00d9ff;
-  text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
-}
-
-.container .box p {
-  color: #ffffff;
-}
-

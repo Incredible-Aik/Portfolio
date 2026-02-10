@@ -48,7 +48,7 @@ const Footer = (props) => {
         boxShadow: "0 -5px 30px rgba(0, 217, 255, 0.2)",
       }}
     >
-      <h2 style={{ color: "#00d9ff", textShadow: "0 0 10px #00d9ff", margin: 0 }}>Contact</h2>
+      <h2 style={{ color: "#00d9ff", marginBottom: "1rem" }}>Contact</h2>
       <div
         style={{
           display: "flex",
@@ -58,32 +58,8 @@ const Footer = (props) => {
         }}
       >
         {email && (
-          <a
-            href={`mailto:${email}`}
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
-          >
-            <img
-              src={envelopeIcon}
-              alt="email"
-              className="socialIcon"
-              style={{
-                width: "40px",
-                height: "40px",
-                filter:
-                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+          <a href={`mailto:${email}`} className="social-link">
+            <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
         )}
         {devDotTo && (
@@ -91,30 +67,9 @@ const Footer = (props) => {
             href={`https://dev.to/${devDotTo}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
-            <img
-              src={devDotToIcon}
-              alt="Dev.to"
-              className="socialIcon"
-              style={{
-                width: "40px",
-                height: "40px",
-                filter:
-                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </a>
         )}
         {gitHub && (
@@ -122,30 +77,9 @@ const Footer = (props) => {
             href={`https://github.com/${gitHub}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
-            <img
-              src={gitHubIcon}
-              alt="GitHub"
-              className="socialIcon"
-              style={{
-                width: "40px",
-                height: "40px",
-                filter:
-                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
         {instagram && (
@@ -153,18 +87,7 @@ const Footer = (props) => {
             href={`https://www.instagram.com/${instagram}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
             <img
               src={instagramIcon}
@@ -184,18 +107,7 @@ const Footer = (props) => {
             href={`https://www.linkedin.com/in/${linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
             <img
               src={linkedInIcon}
@@ -215,30 +127,9 @@ const Footer = (props) => {
             href={`https://medium.com/@${medium}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
-            <img
-              src={mediumIcon}
-              alt="Medium"
-              className="socialIcon"
-              style={{
-                width: "40px",
-                height: "40px",
-                filter:
-                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
         )}
         {twitter && (
@@ -246,30 +137,9 @@ const Footer = (props) => {
             href={`https://twitter.com/${twitter}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
-            <img
-              src={twitterIcon}
-              alt="Twitter"
-              className="socialIcon"
-              style={{
-                width: "40px",
-                height: "40px",
-                filter:
-                  "brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(2716%) hue-rotate(160deg) brightness(102%) contrast(101%)",
-              }}
-            />
+            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
         {youTube && (
@@ -277,18 +147,7 @@ const Footer = (props) => {
             href={`https://www.youtube.com/c/${youTube}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              transition: "all 0.3s ease",
-              filter: "drop-shadow(0 0 10px #00d9ff)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-5px) scale(1.1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 20px #00d9ff)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0) scale(1)";
-              e.currentTarget.style.filter = "drop-shadow(0 0 10px #00d9ff)";
-            }}
+            className="social-link"
           >
             <img
               src={youTubeIcon}

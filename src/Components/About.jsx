@@ -34,7 +34,7 @@ const skillsList = [
   "Python",
   "JavaScript/TypeScript",
   "React.js & Node.js",
-  "Linux (Kali/Ubuntu)",
+  "Linux",
   "Penetration Testing",
   "PostgreSQL",
   "Network Security",
@@ -63,12 +63,12 @@ const About = () => {
           margin: "3rem auto",
           textAlign: "center",
           border: "2px solid #00d9ff",
-          boxShadow: "0 0 30px rgba(0, 217, 255, 0.3), inset 0 0 30px rgba(0, 217, 255, 0.1)",
+          boxShadow: "0 0 30px rgba(0, 217, 255, 0.5), inset 0 0 20px rgba(0, 217, 255, 0.1)",
           borderRadius: "10px",
         }}
       >
-        <h2 style={{ color: "#00d9ff", textShadow: "0 0 10px #00d9ff" }}>About Myself</h2>
-        <p className="large" style={{ color: "#ffffff" }}>
+        <h2 style={{ color: "#00d9ff" }}>About Myself</h2>
+        <p className="large" style={{ color: "white" }}>
           {description}
         </p>
         <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
@@ -83,13 +83,13 @@ const About = () => {
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill} style={{ marginBottom: "0.5rem" }}>
+            <li key={skill} style={{ color: "#00d9ff" }}>
               {skill}
             </li>
           ))}
         </ul>
         <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
-        <p style={{ padding: "1rem 3rem 0", color: "#ffffff" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 3rem 0", color: "white" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
