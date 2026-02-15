@@ -61,7 +61,7 @@ const Portfolio = () => {
     <section
       className="padding"
       id="portfolio"
-      style={{ backgroundColor: "rgba(10, 14, 39, 0.95)" }}
+      style={{ backgroundColor: "rgba(10, 14, 39, 0.95)", position: "relative" }}
     >
       <h2 style={{ textAlign: "center", color: "#00d9ff" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>

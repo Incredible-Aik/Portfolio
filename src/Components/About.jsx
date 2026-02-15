@@ -52,7 +52,7 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="min-height padding" id="about" style={{ position: "relative" }}>
+    <section className="padding" id="about" style={{ position: "relative", minHeight: "100vh" }}>
       <img className="background" src={image} alt={imageAltText} />
       <div className="cyberpunk-overlay"></div>
       <div
@@ -65,6 +65,8 @@ const About = () => {
           border: "2px solid #00d9ff",
           boxShadow: "0 0 30px rgba(0, 217, 255, 0.5), inset 0 0 20px rgba(0, 217, 255, 0.1)",
           borderRadius: "10px",
+          position: "relative",
+          zIndex: 2,
         }}
       >
         <h2 style={{ color: "#00d9ff" }}>About Myself</h2>
