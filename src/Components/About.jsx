@@ -91,7 +91,9 @@ const About = () => {
           ))}
         </ul>
         <hr style={{ borderColor: "rgba(0, 217, 255, 0.3)" }} />
-        <p style={{ padding: "1rem 3rem 0", color: "white" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 3rem 0", color: "#ffffff", marginBottom: "2rem" }}>
+          {detailOrQuote}
+        </p>
       </div>
     </section>
   );
